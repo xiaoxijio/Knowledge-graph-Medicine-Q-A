@@ -8,7 +8,7 @@ class MedicalGraph:
     def __init__(self):
         cur_dir = '/'.join(os.path.abspath(__file__).split('/')[:-1])
         self.data_path = os.path.join(cur_dir, 'data/medical2.json')
-        self.g = Graph("neo4j://localhost:7687", auth=("neo4j", "wusuowei"))
+        self.g = Graph("neo4j://localhost:7687", auth=("改成自己的username", "改成自己的password"))
 
     '''读取文件'''
 
