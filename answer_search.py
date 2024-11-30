@@ -3,7 +3,7 @@ from py2neo import Graph
 
 class AnswerSearcher:
     def __init__(self):
-        self.g = Graph("neo4j://localhost:7687", auth=("neo4j", "wusuowei"))
+        self.g = Graph("neo4j://localhost:7687", auth=("改成自己的username", "改成自己的password"))
         self.num_limit = 20
 
     '''执行cypher查询，并返回相应结果'''
